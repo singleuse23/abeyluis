@@ -1,0 +1,134 @@
+body {
+  display:block;
+
+}
+
+a {
+  color:black !important;
+}
+
+.nav-title-text {
+  position:absolute;
+  top:10%;
+  margin:auto;
+  padding:0!important;
+  text-align:center;
+  width:100%;
+}
+
+.navbar-nav {
+  display:inline-block;
+  text-align:center;
+  width:100%;
+}
+
+
+.jumbotron {
+  background-image: url('cover.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+}
+
+.custom-font {
+   font-family: "Garamond";
+   margin-top:10px;
+}
+
+.the-date {
+  padding-top:50px;
+  padding-bottom: 50px;
+}
+
+
+
+@media (min-width:768px) {
+  .couple{
+    background-image: url('wreath.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    height:500px;
+  }
+
+  .couple-names{
+    top:120px;
+  }
+
+  .the-date{
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width:thin;
+    margin-top:50px;
+    margin-bottom:50px;
+    margin-left: 20px;
+    margin-right:20px;
+  }
+
+  .title-1{
+    background-image: url('title-1-img.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    height:400px;
+  }
+
+  .title-2{
+    background-image: url('title-2-img.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    height:400px;
+  }
+
+  .para-title-1 {
+    top:260px;
+  }
+
+  .para-title-2 {
+    top:0;
+    padding-bottom:50px;
+  }
+
+  .para-text {
+    padding-left:175px;
+    padding-right:175px;
+  }
+}
+
+
+
+@media (max-width:767px){
+
+  .couple{
+    height:300px;
+  }
+
+  .couple-names{
+    top:25px;
+  }
+
+  .the-date{
+    margin-top:5px;
+    margin-bottom:5px;
+  }
+
+  .above-date {
+    background-image: url('above-date.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:90%;
+    height:130px;
+  }
+
+  .below-date {
+    background-image: url('below-date.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:90%;
+    height:130px;
+  }
+
+  .para-text {
+    padding-left:25px;
+    padding-right:25px;
+  }
+}
