@@ -8,8 +8,7 @@ a {
 }
 
 .nav-title-text {
-  position:absolute;
-  top:10%;
+  position:fixed;
   margin:auto;
   padding:0!important;
   text-align:center;
@@ -17,18 +16,38 @@ a {
 }
 
 .navbar-nav {
-  display:inline-block;
-  text-align:center;
+  text-align:center !important;
+
   width:100%;
 }
 
+.navbar-nav li {
+
+}
+
+
+.navbar-toggle {
+  float:left !important;
+  margin-left:0!important;
+  margin-right:0!important;
+  border-color:white !important;
+  z-index:2;
+}
+
+.icon-bar{
+  background-color:black !important;
+  padding-left:17px !important;
+  padding-right:17px !important;
+  padding-top:2px !important;
+  padding-bottom:2px !important;
+}
 
 .jumbotron {
   background-image: url('cover.jpeg');
-  background-position: center center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  height:100%;
+  width:100%;
 }
 
 .custom-font {
@@ -44,6 +63,38 @@ a {
 
 
 @media (min-width:768px) {
+  .desktop-only{
+    display:block;
+    position:fixed;
+    top:20px;
+    left:15px;
+    z-index:10;
+    font-family: "Garamond";
+    font-size:13px;
+    letter-spacing:.75px;
+    padding:0;
+    margin:0;
+  }
+
+  .navbar {
+    padding-top:80px;
+  }
+
+  .nav-title-text {
+    top:30px;
+    font-size:45px;
+  }
+
+
+.navbar-nav {
+  display:flex;
+  justify-content:center;
+}
+
+  .jumbotron {
+    height:800px;
+  }
+
   .couple{
     background-image: url('wreath.png');
     background-position: center center;
@@ -97,6 +148,27 @@ a {
 
 
 @media (max-width:767px){
+  .desktop-only{
+    display:none;
+  }
+
+  .nav-title-text {
+    top:8px;
+    font-size:30px;
+  }
+
+  .jumbotron {
+    height:300px;
+  }
+
+  .navbar-nav {
+    font-size:30px;
+    margin-left:0px !important;
+  }
+
+.navbar-collapse {
+
+}
 
   .couple{
     height:300px;
